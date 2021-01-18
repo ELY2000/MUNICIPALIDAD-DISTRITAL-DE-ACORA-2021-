@@ -1,0 +1,297 @@
+/*Estes son efectos generales*/
+
+*{
+
+margin: 0;
+padding: 0;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing: border-box;;
+
+
+}
+/*Para el cuerpo de mi PG-web*/
+
+
+
+
+
+/*BUSCADOR*/
+input[type=search]{
+	border:1px dotted #999;
+	border radius:0;
+	webkit-appearance:none;
+}
+body{
+	background:#8BC34A; 
+	text-align:center;
+	color:#663399;
+	font-size: 20px;
+ font-family: 'bold';
+}
+.hr{
+	background: #533;
+}
+/*Para el menu de nav*/
+.navegacion{
+	width: 1000px;
+	margin: 30px auto;
+	background: #AED581;
+}
+.navegacion ul{
+	list-style: none;
+}
+.Menu > li{
+	position: relative;
+	display: inline-block;
+}
+.Menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color:#353535;
+	font-family: 'Verdana';
+	text-decoration: none;
+}
+/*Dando color a nuestra barra*/
+.Menu li a: hover;
+{
+	color:#CE7D35;
+	/*Para que al pasar con el mouse no se pierda al instantye ,si no dentro de los 4 segundos-->
+	transition: all .4s;*/
+	transition: all .4s;
+}
+/*Para nuestro submenu*/
+.Submenu{
+	width:120px;
+	position:absolute;
+	background:#876;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 5s;
+}
+.Submenu li a{
+	display: block;
+	padding: 15px;
+	color:#fff;
+	font-family: 'Verdana';
+	text-decoration: none;
+}
+.Menu li:hover .Submenu{
+	visibility:visible;
+	opacity: 1;
+}
+
+/*SLIDER*/
+.container{
+	margin: auto;
+	background-color:#8BC34A;
+	width: 1200px;
+	padding: 50px;
+}
+ul,li{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+ul.slider{
+	position: relative;
+	width: 1100px;
+	height: 320px;
+}
+
+ul.slider li{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	opacity: 0;
+	width: inherit;
+	height: inherit;
+	transition: opacity .5s;
+	background: #fff;
+}
+
+ul.slider li img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+ul.slider li:first-child{
+	opacity: 1; /*Mostramos la primera lista*/
+}
+ul.slider li:target{
+	opacity: 1; /* Mostramos un li*/
+}
+.menu{
+	text-align: center;
+	margin: 20px;
+}
+.menu li {
+	display: inline-block;
+	text-align: center;
+}
+.menu li a{
+	display: inline-block;
+	color: purple;
+	text-decoration: none;
+	background-color:grey;
+	padding: 10px;
+	width: 25px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 100%; 
+}
+/*Segunda seccion*/
+
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 60%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 50%;
+}
+
+
+
+
+ 
+/*TERCERA SECCION*/
+ 
+img{
+	width: 100%;
+}
+
+.portafolio{
+	width:90%;
+	max-width:1400px;
+	margin:auto;
+}
+.portafolio h1{
+text-align: center;
+font-size: 38px;
+margin: 15px 0px 40px;
+}
+.portafolio-container{
+	display: flex;
+	justify-content: space-between;
+}
+.portafolio-item{
+	width: 30%;
+	position: relative;
+
+	overflow: hidden;
+
+}
+.portafolio-img{
+	transition:  all 0.5s ;
+}
+.portafolio-text{
+	position: absolute;
+	bottom: 0;
+
+	padding: 20px;
+	background:rgb(0,0,0,0.7);
+	color: #ffff;
+
+	/* Este es para mi aniamcion en el texto Movimiento vertical y*/ 
+
+	transform: translateY(100%);
+	transition: all 0.5s ease-out;
+}
+.portafolio-text p{
+	text-align: justify;
+
+}
+.portafolio-item:hover .portafolio-text{
+	transform: translateY(0%);
+
+}
+.portafolio-item:hover .portafolio-img{
+	transform: scale(1.15);
+
+} 
+/* Mis colores,posicion para mi Pie de Pagina */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.Titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    
+    ----
+
+
+    
+    /* Mi pie de pagina */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .Titulo-final{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,104 @@
+
+/*GENERAL*/
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+	background: #99ff99;
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-attachment: fixed;
+}
+
+/*PARA LAS CAJAS DE TEXTO Y PARA DIGITAR EL TEXTO DE MI FORMULARIO*/
+.Tramite_doc .formulario .form-header .form-title{
+	font-weight: normal;
+	font-family: sans-serif;
+	color: #9933ff;
+	text-align: center;
+	padding: 14px 0;
+}
+.Tramite_doc .formulario .form-header .form-title span{
+	color:#fff;
+
+}
+
+.Tramite_doc .formulario {
+	background: rgba(0,0,0,.6);
+	width: 90%;
+	max-width: 650px;
+	margin: auto;
+	padding: 5px 35px;
+	margin-top: 30px;
+	padding-bottom: 30px;
+	border-radius: 3px;
+}
+
+.Tramite_doc .formulario .form-label{
+	display: block;
+	color: #9933ff;
+	font-size: 16px;
+	font-family:Roboto;
+    position: relative;
+
+}
+/*PARA LA PARTE DE DESCRIPCION*/
+
+.Tramite_doc .formulario .form-input, .form-textarea{
+	background: rgba(0,0,0,.7);
+	border:none;
+	outline: none;
+	border-bottom: 2px solid #009975 ;
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px; 
+	border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    font-family: Roboto;
+
+}
+
+.Tramite_doc .formulario .form-textarea{ 
+resize: vertical;
+max-height: 150px;
+min-height: 200px;
+
+ }
+
+
+/*PARA MI BOTON*/
+
+
+ .Tramite_doc .formulario .btn-submit {
+ 	width: 100%;
+ 	font-family:Roboto;
+ 	outline: none;
+ 	background:   #009975;
+ 	font-size: 16px;
+ 	border:none;
+ 	color: #fff;
+ 	padding: 15px 0;
+ 	cursor: pointer;
+ 	transition: all .5s ease;
+
+ }
+
+.Tramite_doc .formulario .btn-submit:hover{
+	background: #8DB600;
+}
+
+
+
+
+
+
+
+
+

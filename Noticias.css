@@ -1,0 +1,125 @@
+
+/*General*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #AAAAAA;
+	font-family: 'Sans';
+}
+
+img{
+	width: 100%;
+}
+
+.portafolio{
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+}
+.portafolio h1{
+text-align: center;
+font-size: 38px;
+margin: 15px 0px 40px;
+}
+.portafolio-container{
+	display: flex;
+	justify-content: space-between;
+}
+.portafolio-item{
+	width: 30%;
+	position: relative;
+
+	overflow: hidden;
+
+}
+.portafolio-img{
+	transition:  all 0.5s ;
+}
+.portafolio-text{
+	position: absolute;
+	bottom: 0;
+
+	padding: 20px;
+	background:rgb(0,0,0,0.7);
+	color: #ffff;
+
+
+	/* Este es para mi animacion en el texto Movimiento vertical y*/ 
+	transform: translateY(100%);
+	transition: all 0.5s ease-out;
+}
+.portafolio-text p{
+	text-align: justify;
+
+}
+.portafolio-item:hover .portafolio-text{
+	transform: translateY(0%);
+
+}
+.portafolio-item:hover .portafolio-img{
+	transform: scale(1.15);
+
+}
+
+
+
+------
+
+
+
+.P.Estatica{
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+}
+.P.Estatica h1{
+text-align: center;
+font-size: 38px;
+margin: 15px 0px 40px;
+}
+.Contenedor-Estatico{
+	display: flex;
+	justify-content: space-between;
+}
+.P.Estatica-item{
+	width: 30%;
+	position: relative;
+
+	overflow: hidden;
+
+}
+.P.Estatica-img{
+	transition:  all 0.5s ;
+}
+.P.Estatica-text{
+	position: absolute;
+	bottom: 0;
+
+	padding: 20px;
+	background:rgb(0,0,0,0.7);
+	color: #ffff;
+
+
+	/* Este es para mi animacion en el texto Movimiento vertical y*/ 
+	transform: translateY(100%);
+	transition: all 0.5s ease-out;
+}
+.P.Estatica-text p{
+	text-align: justify;
+
+}
+..P.Estatica-item:hover .P.Estatica-text{
+	transform: translateY(0%);
+
+}
+.P.Estatica-item:hover .P.Estatica-img{
+	transform: scale(1.15);
+
+}
+
+
+
+
